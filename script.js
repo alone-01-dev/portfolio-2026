@@ -32,8 +32,9 @@ const typingEffect = new Typed('.typedText', {
 const roleTyping = new Typed('#typed-role', {
   strings: [
     'Java Full Stack Developer',
-    'Spring &amp; Hibernate',
+    'Spring Boot &amp; Hibernate',
     'REST API Builder',
+    'Java Backend Developer',
     'Team Leader',
   ],
   loop: true,

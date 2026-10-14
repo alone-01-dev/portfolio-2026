@@ -375,6 +375,7 @@ i { font-size: 20px; }
   border-radius: 20px;
   width: 100%;
 }
+.about-info:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -20px rgba(135,73,242,0.4); }
 .about-info figcaption { width: 100%; padding: 0; text-align: center; }
 .about-me .profile {
   border-radius: 50%;
@@ -428,6 +429,7 @@ i { font-size: 20px; }
   color: var(--text-color);
   margin-bottom: 6px;
 }
+
 .skill-box .title .pct { color: var(--first-color); font-family: 'JetBrains Mono', monospace; font-size: 12px; }
 .skill-box .skill-bar {
   height: 8px;
@@ -436,6 +438,7 @@ i { font-size: 20px; }
   background: rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
+.skill:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -20px rgba(135,73,242,0.4); }
 .skill-box .skill-per {
   position: relative;
   display: block;
@@ -559,6 +562,7 @@ i { font-size: 20px; }
   align-items: center;
   gap: 8px;
 }
+.info-panel:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -20px rgba(135,73,242,0.4); }
 .info-panel h3 i { color: var(--first-color); font-size: 18px; }
 .edu-entry { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px dashed var(--card-border); }
 .edu-entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
@@ -618,6 +622,7 @@ i { font-size: 20px; }
   margin-block: 8px;
   font-size: 14.5px;
 }
+.contact-info:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -20px rgba(135,73,242,0.4); }
 .contact-info i { color: var(--first-color); font-size: 18px; }
 
 /*----contact form----*/
@@ -635,6 +640,7 @@ i { font-size: 20px; }
   font-size: 14px;
   transition: border-color 0.2s;
 }
+/* .form-subject,.input-field,.form-inputs:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -20px rgba(135,73,242,0.4); } */
 .input-field:focus, .input-subject:focus, textarea:focus { border-color: var(--first-color); }
 textarea {
   width: 100%;
@@ -727,4 +733,168 @@ footer {
   .role-line { font-size: 17px; }
   .text-btn { flex-direction: column; }
   .top-header h1 { font-size: 26px; }
+}
+/* =========================================
+   MISSING PURPLE GLOW HOVER EFFECTS
+   Add at the END of portfolio.css
+========================================= */
+
+/* Smooth transitions for missing elements */
+.chip,
+.timeline-item,
+.edu-entry,
+.cert-entry,
+.project-stack span,
+.eyebrow,
+.section-tag,
+.timeline-date,
+.cert-check,
+.moon-sun,
+.footer-social-icons .icon,
+.footer-menu-list a,
+.input-field,
+.input-subject,
+textarea,
+.nav-link,
+.social_icons .icon,
+.skill-box,
+.image {
+  transition: all 0.3s ease;
+}
+
+/* Skill chips and language chips */
+.chip:hover,
+.project-stack span:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(135, 73, 242, 0.35);
+}
+
+/* Experience timeline items */
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+.timeline-item:hover::before {
+  box-shadow: 0 0 12px var(--first-color);
+}
+
+/* Education entries */
+.edu-entry:hover {
+  transform: translateX(4px);
+  border-bottom-color: var(--first-color);
+}
+
+/* Certification rows */
+.cert-entry:hover {
+  transform: translateX(4px);
+  color: var(--first-color);
+}
+
+.cert-entry:hover .cert-check {
+  box-shadow: 0 0 12px rgba(135, 73, 242, 0.4);
+}
+
+/* Dark mode toggle */
+.moon-sun:hover {
+  box-shadow: 0 0 16px rgba(135, 73, 242, 0.55);
+  transform: scale(1.08);
+}
+
+/* Contact form fields: email, name, subject */
+.input-field:hover,
+.input-subject:hover,
+textarea:hover {
+  border-color: var(--first-color);
+  box-shadow: 0 0 12px rgba(135, 73, 242, 0.25);
+}
+
+.input-field:focus,
+.input-subject:focus,
+textarea:focus {
+  border-color: var(--first-color);
+  box-shadow: 0 0 16px rgba(135, 73, 242, 0.35);
+}
+
+/* Footer social icons */
+.footer-social-icons .icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 14px rgba(135, 73, 242, 0.4);
+}
+
+/* Footer navigation links */
+.footer-menu-list a:hover {
+  text-shadow: 0 0 10px rgba(135, 73, 242, 0.45);
+}
+
+/* Navigation links */
+.nav-link:hover {
+  text-shadow: 0 0 10px rgba(135, 73, 242, 0.35);
+}
+
+/* Social icons */
+.social_icons .icon:hover {
+  box-shadow: 0 0 16px rgba(135, 73, 242, 0.45);
+}
+
+/* Hero profile image */
+.image:hover {
+  border-color: var(--first-color);
+  box-shadow: 0 0 25px rgba(135, 73, 242, 0.55);
+}
+
+/* Opportunity badge */
+.eyebrow:hover,
+.section-tag:hover {
+  box-shadow: 0 0 12px rgba(135, 73, 242, 0.3);
+}
+
+/* Experience date badges */
+.timeline-date:hover {
+  box-shadow: 0 0 10px rgba(135, 73, 242, 0.3);
+}
+
+/* Skill progress bars */
+.skill-box:hover .skill-bar {
+  box-shadow: 0 0 10px rgba(135, 73, 242, 0.4);
+}
+
+/* Contact submit button */
+.form-button > .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(135, 73, 242, 0.55);
+}
+
+/* Keyboard accessibility */
+.input-field:focus-visible,
+.input-subject:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--first-color);
+  outline-offset: 3px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .chip,
+  .timeline-item,
+  .edu-entry,
+  .cert-entry,
+  .project-stack span,
+  .eyebrow,
+  .section-tag,
+  .timeline-date,
+  .cert-check,
+  .moon-sun,
+  .footer-social-icons .icon,
+  .footer-menu-list a,
+  .input-field,
+  .input-subject,
+  textarea,
+  .nav-link,
+  .social_icons .icon,
+  .skill-box,
+  .image {
+    transition: none;
+  }
 }
