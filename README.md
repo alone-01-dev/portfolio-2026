@@ -2,7 +2,7 @@
 
 Personal portfolio site for Viji Prakash Sharma, Java Full Stack Developer.
 
-Live: https://alone-01-dev.github.io/Portfolio-/
+Live: https://alone-01-dev.github.io/portfolio-2026/
 
 ## Sections
 - Home — intro with typing effect
